@@ -1,0 +1,5 @@
+- navbar com botao de contato e redes sociais V
+- carousel passando uma propaganda para contato principal e produtos principais (1 novo e um seminovo) V
+- tab que troque os produtos novos e semi novos, fazendo um 2x2 (desktop e tablet) e 1x1 (celular e outras telas) V
+- footer de acordo com o site e novamente botão de contato. V
+- estilizar e deixar profissional V

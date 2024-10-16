@@ -1,0 +1,273 @@
+/*Code by @leothiago._*/
+
+body{
+    background: url(https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/6289f0bfa920a958f2b416f7_black-gradient.png) rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+#Logo-Lagi {
+    width: 80px;
+    height: 70px;
+}
+
+#Logo-Lagi:hover {
+    transform: scale(1.25);
+    transition: 0.8s all;
+}
+
+.nav-item a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.8s all;
+}
+
+#btn-contato {
+    color: gray;
+    background: transparent;
+    border:solid 1px gray;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 105px;
+    text-align: center;
+    float: right;
+}
+
+#btn-contato:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.8 all;
+}
+/*Carousel*/
+
+.carousel-inner {
+  border-radius: 15px;
+  border: 4px solid gray;
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: 800px; 
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .carousel-item img {
+      height: 400px;
+    }
+  }
+
+/*Cards*/
+#card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .cards-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card {
+    margin-top: 3.5rem;
+      background-color: transparent;
+      border: 1px solid #ccc; 
+      border-radius: 10px;
+      padding: 20px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; 
+    }
+    
+    .card:hover {
+      transform: scale(1.05); 
+    }
+    
+    .card-text {
+      color: #fff;
+    }
+
+    .card-title {
+      color: #fff;
+    }
+
+    .card-link {
+      text-decoration: none;
+    }
+    
+
+    .btn-click {
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  cursor: pointer;
+  color: white;
+  padding: 1em 0.6em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+ 
+}
+
+.btn-click:hover {
+  box-shadow: var(--hover-shadows);
+}
+
+.btn-click:active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+
+/*Footer*/
+
+footer {
+  border-top: 1px solid gray;
+  margin-top: 12rem;
+  position: relative;
+  width: 100%;
+  background: #212121;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social-icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+  list-style: none;
+
+}
+
+footer .social-icon li a,
+footer .menu li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a  {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+footer .wave {
+  position: absolute;
+  top: -180px; /* Certifique-se de que está negativo para aparecer acima */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://i.ibb.co/Y0ZWb48/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  top: -160px; /* Altere este valor conforme necessário */
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  top: -140px; /* Ajuste conforme necessário */
+  animation: animateWave-02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  top: -120px; /* Ajuste conforme necessário */
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  top: -100px; /* Ajuste conforme necessário */
+  animation: animateWave-02 3s linear infinite;
+}
+
+
+
+@keyframes animateWave 
+{
+  0%
+  {
+    background-position-x: 1000px ;
+  }
+  100%
+  {
+    background-position-x: 0px ;
+  }
+}
+
+@keyframes animateWave-02 
+{
+  0%
+  {
+    background-position-x: 0px ;
+  }
+  100%
+  {
+    background-position-x: 1000px ;
+  }
+}
+
+/*Code by @leothiago._*/
