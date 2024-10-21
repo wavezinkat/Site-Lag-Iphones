@@ -1,5 +1,6 @@
 /*Code by @leothiago._*/
 
+/*Barra de navegação*/
 body{
     background: url(https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/6289f0bfa920a958f2b416f7_black-gradient.png) rgba(0,0,0,0.3);
     background-blend-mode: multiply;
@@ -20,7 +21,6 @@ a {
     transform: scale(1.25);
     transition: 0.8s all;
 }
-
 .nav-item a:hover {
     color: rgb(0, 0, 0);
     transition: 0.8s all;
